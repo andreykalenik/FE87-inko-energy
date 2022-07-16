@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Uni Neue Regular';
+    src: local('Uni Neue Regular'), local('Uni-Neue-Regular'),
+        url('/fonts/UniNeueRegular.woff2') format('woff2'),
+        url('/fonts/UniNeueRegular.woff') format('woff'),
+        url('/fonts/UniNeueRegular.ttf') format('truetype');
+     src: local('Uni Neue Book'), local('Uni-Neue-Book'),
+        url('/fonts/UniNeueBook.woff2') format('woff2'),
+        url('/fonts/UniNeueBook.woff') format('woff'),
+        url('/fonts/UniNeueBook.ttf') format('truetype'); 
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Uni Neue Regular';
+    src: local('Uni Neue Regular'), local('Uni-Neue-Regular'),
+        url('/fonts/UniNeueRegular.woff2') format('woff2'),
+        url('/fonts/UniNeueRegular.woff') format('woff'),
+        url('/fonts/UniNeueRegular.ttf') format('truetype');
+     src: local('Uni Neue Book'), local('Uni-Neue-Book'),
+        url('/fonts/UniNeueBook.woff2') format('woff2'),
+        url('/fonts/UniNeueBook.woff') format('woff'),
+        url('/fonts/UniNeueBook.ttf') format('truetype'); 
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Uni Neue Book';
+     src: local('Uni Neue Book'), local('Uni-Neue-Book'),
+        url('/fonts/UniNeueBook.woff2') format('woff2'),
+        url('/fonts/UniNeueBook.woff') format('woff'),
+        url('/fonts/UniNeueBook.ttf') format('truetype'); 
+    font-weight: 400;
+    font-style: normal;
+  } 
+body,
+span{
+    font-family: 'Uni Neue Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+  ._container {
+    position: relative;
+    max-width: 1920px;
+    max-height: 960px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.border {
+    background: rgba(30, 33, 40, 0.8);
+    z-index: 2;
+}
+.border-vertical {
+    /* width: 100px; */
+}
+.border-horisontal {
+    height: 100px;
+}
+
+.nav {
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    place-content: center center;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D31218;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.button:hover{
+   background-color: #AE060B; 
+}
+
+.nav__burger {
+    width: 100px;
+    padding: 40px 31px 36px 29px;
+    border-radius: 0;
+    opacity: 1;
+}
+.nav__burger:hover img{
+    transition: 1.2s;
+    transform: scaleY(1.416);
+}
+.content {
+
+}
+.slader {
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    place-content: center center;
+}
+.slader__item{
+    align-self: center;
+    background: #2C303C;
+    margin: 4px 0;
+}
+
+.slader__item:nth-child(odd){
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
+/* .slader__item:nth-child(odd):hover{
+    background-color: #AE060B; 
+} */
+
+.slader__item:nth-child(even){
+    height: 24px; 
+    width: 1px;
+
+}
+.slader__item .active{
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    border: 1px solid #2C303C;;
+    background-color: transparent;
+
+
+}
+.slader__link{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #D31218;
+}
+/* .slader__item:nth-child(5){
+    
+
+} */
+
+.main {
+    width: 1720px;
+    height: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Uni Neue Book';
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+}
+.button-menu{
+    width: 180px;
+    height: 50px;
+}
+.menu__logo {
+    justify-items: center;
+    width: 279px;
+    height: 50px;
+}
+.logo {
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+}
+.logo__inteco {
+    min-width: 128px;
+    font-size: 40px;
+    line-height: 54px;
+}
+.logo__energy {
+    min-width: 150px;
+    background-color: #D31318;
+    border-radius: 3px;
+    font-size: 30px;
+    line-height: 41px;
+
+}
+.menu__phone {
+    position: absolute;
+    top: 35px;
+    right: calc(180px + 30px);
+    font-size: 22px;
+    line-height: 30px;
+}
+.menu__call {
+}
+.content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content__row{
+    max-height: 480px;
+    max-width: 1920px;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.row__block{
+    height: 480px;
+    width: 640px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 59px;
+    padding-bottom: 54px;
+    background-image: url(/img/2.png);
+    background-size: cover;
+    background-color: rgba(18, 20, 27, 0.8);
+    background-blend-mode: multiply;
+}
+
+.row__block:first-child{
+    padding-left: 159px;
+    background-image: url(/img/1.png)
+}
+.row__block:last-child{
+    background-image: url(/img/3.png);
+}
+.row__block:hover, .row__block:hover span{
+    background-blend-mode: normal;
+    color: #D31218;
+    transition: 0.2s;
+}
+.content__row:last-child .row__block{
+    background-image: url(/img/5.png);
+    padding-bottom: 154px;
+}
+
+.content__row:last-child .row__block:first-child{
+    background-image: url(/img/4.png);
+
+}
+.content__row:last-child .row__block:last-child{
+    background-image: url(/img/6.png);
+
+}
+.block__content{
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center;
+}
+.block__content img{
+    margin-top: 15px;
+    margin-left: -20px;
+}
+
+.row__block:nth-child(3) img{
+    margin-left: 10px;
+}
+.content__row:last-child img{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.content__row:last-child .row__block:nth-child(3) img{
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.bufer {
+}
+.fotter {
+}
